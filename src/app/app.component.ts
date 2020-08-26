@@ -51,11 +51,11 @@ export class AppComponent implements OnInit, AfterViewInit {
   @ViewChild(CdkScrollable, {static: false}) scrollable: CdkScrollable;
 
   constructor(private el: ElementRef,
-              private scrollableService: ScrollableService,
+              public scrollableService: ScrollableService,
               private navbarService: NavbarService) {
   }
 
-  private check() {
+  public check() {
     if (window.innerWidth < 700 || window.innerHeight < 700) {
       this.height =  100;
       this.defaultHeight = 80;
