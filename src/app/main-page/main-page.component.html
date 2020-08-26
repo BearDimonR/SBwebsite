@@ -1,0 +1,95 @@
+<div class="main">
+  <section>
+    <div class="title-page">
+      <div class="title-page-box">
+        <div class="title-box-img">
+          <div class="title-img" [@titleImageAnim]="{value: titleAnim}"></div>
+        </div>
+        <div class="title-box-div" [@titleTextAnim]="{value: titleAnim}">
+          <h1 class="title-text pc">
+            Командні Проєкти<br/> Крута Атмосферa Та<br/> Круті Люди<br/> Все Це - Ми!
+          </h1>
+          <h1 class="title-text mob">
+            Командні Проєкти Крута Атмосферa Та Круті Люди Все Це - Ми!
+          </h1>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="info-page">
+      <div class="info-box">
+        <h3 class="info-title-text">
+          Спудейське братство
+        </h3>
+        <h1 class="info-interest-text">
+          Найстарше студентське об'єднання в Могилянці</h1>
+        <div class="info-splitter"></div>
+        <div class="info-desc-box">
+          <p class="info-desc-text absolute"
+             [style.opacity]="this.infoAnim?1:0"
+             [@infoDescTextAnim]="{value: this.infoAnim}">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p class="info-desc-text hidden">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="project-page">
+      <div class="project-page-box">
+        <div class="project-box-img"
+             [@projectImageAnim]="projectAnim">
+          <div class="project-img"></div>
+          <div class="project-img animation"
+               [style.opacity]="this.projectAnim?0:1">
+          </div>
+        </div>
+        <div class="project-box-text-flex">
+          <div class="project-box-text absolute"
+               [@projectTextAnim]="projectAnim"
+               [style.opacity]="this.projectAnim?1:0">
+            <h1 class="project-text">
+              Якими ж проєктами ми займаємося?
+              Більше інформації<br/>
+              <a [routerLink]="['/tree']" target="_self">знайдеш тут!</a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="tree-page"
+         [@treePageAnim]="this.treeAnim"
+         [style.opacity]="this.treeAnim?1:0">
+      <div class="tree-box-text-flex">
+        <div class="tree-box-text">
+          <h1 class="tree-text">
+            Наша сім'я<br/> налічує<br/> не один десяток<br/> поколінь<br/>
+            Не віриш?<br/>
+            <a [routerLink]="['/tree']" target="_self">знайдеш тут!</a>
+          </h1>
+        </div>
+      </div>
+      <div class="tree-box-img">
+        <div class="tree-img"></div>
+      </div>
+    </div>
+  </section>
+</div>

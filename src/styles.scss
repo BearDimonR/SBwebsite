@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+.material-icons {
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+mat-sidenav-content{
+  overflow-x: hidden !important;
+}
+body{
+  overflow: hidden;
+  margin: 0;
+  background: white;
+  font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+  letter-spacing: 0.45vh;
+  line-height: 7.5vmin;
+  align-content: center;
+}
+

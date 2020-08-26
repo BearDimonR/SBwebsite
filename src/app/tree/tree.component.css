@@ -1,0 +1,61 @@
+div{
+  height: inherit;
+  width: inherit;
+}
+.vis-navigation{
+  height: 10px;
+}
+
+.vis-up,
+.vis-down,
+.vis-left,
+.vis-right,
+.vis-zoomIn,
+.vis-zoomOut,
+.vis-zoomExtends {
+  background-image: none !important;
+}
+
+.vis-button:hover {
+  box-shadow: none !important;
+}
+
+.vis-button:after {
+  font-size: 2em;
+  color: gray;
+}
+
+.vis-button:hover:after {
+  font-size: 2em;
+  color: lightgray;
+}
+
+.vis-up:after {
+  content: "▲";
+}
+
+.vis-down:after {
+  content: "▼";
+}
+
+.vis-left:after {
+  content: "◀";
+}
+
+.vis-right:after {
+  content: "▶";
+}
+
+.vis-zoomIn:after {
+  content: "+";
+  font-weight: bold;
+}
+
+.vis-zoomOut:after {
+  content: "−";
+  font-weight: bold;
+}
+
+.vis-zoomExtends:after {
+  content: "⤧";
+}

@@ -1,0 +1,84 @@
+mat-toolbar{
+  width: 100%;
+  background: black;
+  padding: 0;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-div{
+  margin-left: 3%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.clickable-div{
+  height: 55%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.text-box{
+  margin-left: 3%;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+.text{
+  padding-left: 2%;
+  font-family: cursive;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #29639F;
+}
+.toolbar-img{
+  position: relative;
+  height: 100%;
+}
+.side-icon-box{
+  margin-right: 5%;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.animated-icon{
+  color: #29639F;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  transition: 0.5s;
+}
+.animated-icon:hover{
+  opacity: 0.8;
+}
+.clickable-div:hover .text-box{
+  opacity: 0.8;
+}
+.clickable-div:hover .toolbar-img{
+  opacity: 0.8;
+}
+.material-icons{
+  font-size: 46px;
+}
+
+@media screen and (max-width: 700px) {
+  .logo-div {
+    margin-left: 5%;
+  }
+  .side-icon-box{
+    margin-right: 5%;
+  }
+  .material-icons{
+    font-size: 36px;  /* Preferred icon size */
+  }
+}

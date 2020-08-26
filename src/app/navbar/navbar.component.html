@@ -1,0 +1,16 @@
+<mat-toolbar>
+  <div class="logo-div">
+  <div class="clickable-div" (click)="clickLogo()">
+    <img src="../../assets/sbclean.png" alt="" class="toolbar-img">
+    <div class="text-box" (window:resize)="checkFont()">
+      <span fittext [minFontSize]="12" class="text"  [hidden]="minFontSize !== 12">Спудейське Братство</span>
+      <span fittext [minFontSize]="15" class="text"  [hidden]="minFontSize !== 15">Спудейське Братство</span>
+      <span fittext [minFontSize]="25" class="text" [hidden]="minFontSize !== 25">Спудейське Братство</span>
+    </div>
+  </div>
+  </div>
+  <div class="side-icon-box">
+    <mat-icon class="animated-icon"
+              (click)="this.opened.emit(true)">menu</mat-icon>
+  </div>
+</mat-toolbar>
