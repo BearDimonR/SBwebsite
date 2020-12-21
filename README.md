@@ -1,4 +1,4 @@
 # **SBwebsite**
-## *Website for Spudey's Brotherhood of Kyiv-Mohula Academy*
-#### *Developed by Dmytro Miedviediev and Yehor Reznichenko*
+## *Example page made with Angular*
+#### *Developed by Dmytro Miedviediev*
 ### *18.08.2020*
